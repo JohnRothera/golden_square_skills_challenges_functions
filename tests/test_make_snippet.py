@@ -12,6 +12,6 @@ def test_string_less_than_5_words():
     assert result == "Hello world"
 
 
-def test_string_more_than_5_words():
+def test_string_more_than_5_words_ends_with_ellipses():
     result = make_snippet("Hello world what a pleasure to be here")
-    assert result == "Hello world what a pleasure"
+    assert result == "Hello world what a pleasure..."
