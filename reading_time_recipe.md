@@ -43,10 +43,18 @@ _Make a list of examples of what the function will take and return._
 from lib.reading_time import *
 
 # Initially check for the amount of words given as a parameter.
-
 def test_amount_of_words():
     result = reading_time("This is an amount of words")
     assert result == 6
+
+# Add functionality for the user stories request of a simple algorithm to estmate reading time. 
+# They read 200 words a minute. That would be 3.33 words a second. My algorithm would be to 
+# firstly check amount of words and then multiply them by 3.33 to get a tme in seconds.
+def test_amount_of_words_time_equation():
+    result = reading_time("This is an amount of words and they need to be put into a simple function that calculates how long it would take to read them all")
+    assert result == 89.91
+
+
 
 _Encode each example as a test. You can add to the above list as you go._
 
